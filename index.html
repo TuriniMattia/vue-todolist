@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- foglio di stile  -->
     <link rel="stylesheet" href="./style.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/5dd1e5b89d.js" crossorigin="anonymous"></script>
@@ -24,8 +25,8 @@
         <main>
             <div class="container">
                 <div class="card">
-                    <input type="text" v-model.trim="inputValue" @keydown.enter="addTodo">
-                    <button @click="addTodo">enter
+                    <input class="testo" type="text" v-model.trim="inputValue" @keydown.enter="addTodo">
+                    <button @click="addTodo" class="bottone">ADD
                     </button>
                     <!-- {{ todos}} -->
                     <ul class="todo-list" v-if="todos.length !== 0">
@@ -33,11 +34,11 @@
                         <li class="todo-item" v-for="(todo,i) in todos" :class="todo.done === true  ? 'complete' : ''"
                         @click="todo.done = !todo.done"
                         >
-                            {{ todo.text }} <i class="fa-solid fa-x" @click="deleteItem(i)"></i>
+                            {{ todo.text }} <i class="fa-solid fa-trash cestino" @click="deleteItem(i)"></i>
                         </li>
 
                     </ul>
-                    <p v-else>Non ci sono commissioni da fare</p>
+                    <p class="vuoto" v-else>Non ci sono commissioni da fare</p>
 
                 </div>
             </div>

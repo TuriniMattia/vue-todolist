@@ -5,7 +5,7 @@ const { createApp } = Vue
 const todoItems = [
     {
         text : 'devo fare i compiti',
-        done : true,
+        done : false,
     },
     {
         text : 'devo fare la spesa',

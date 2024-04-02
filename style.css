@@ -2,15 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+body{
+    background-color: rgb(34, 97, 203);
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+
+}
+.card{
+    padding: 50px;
+    
 }
 
+.bottone{
+    margin-left: 30px;
+    background-color: rgb(34, 97, 203) ;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.testo{
+    padding: 10px;
+    border-radius: 10px;
+    
+    border:3px solid rgb(80, 129, 213) ;
+}
+
+.cestino{
+color: white; 
+padding: 7px;
+border: none;
+background-color: rgb(29, 26, 163); 
+border-radius: 5px;  
+
+
+}
 .header{
     padding: 30px;
-    background-color: blue;
     color: white;
     text-align: center;
 }
@@ -22,4 +62,25 @@
 
 .complete{
     text-decoration: line-through;
+}
+
+.todo-list{
+    margin-top: 30px;
+}
+
+.todo-item{
+    margin-top: 6px;
+    max-width: 100%;
+    border: 1px solid rgb(80, 129, 213);
+    background-color: rgb(197, 225, 229);
+    
+    border-radius:10px ;
+    padding: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.vuoto{
+    margin-top: 20px;
 }
